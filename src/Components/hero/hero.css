@@ -1,7 +1,7 @@
 .hero{
     background-image: url('../../assets/hero-bg.webp');
     background-size: cover;
-    height: 85vh;
+    height: 87vh;
     padding-top: 50px;
 }
 .hero img{

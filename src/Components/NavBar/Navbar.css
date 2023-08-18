@@ -25,6 +25,7 @@
     font-weight: 500;
     margin: 0 15px;
     font-size: 1.4rem;
+    width: fit-content;
 }
 
 .links li::after {
@@ -41,6 +42,7 @@
 .links li:hover {
     color: aqua;
 }
+
 .links li:hover::after {
     width: 100%;
 }
@@ -66,14 +68,37 @@
     color: white;
 }
 
+#menushow,#menuhide {
+    display: none;
+}
+
 @media (max-width: 800px) {
     .navBar {
         justify-content: space-between;
         padding: 0 40px;
     }
+    #menushow{
+        display: block;
+    }
 
     .navBar ul {
-        display: none;
+        display: block;
+        position: fixed;
+        left: -400px;
+        top: 0;
+        bottom: 0;
+        transition: 1s;
+        margin-top: 100px;
+        padding-top: 50px;
+        width: 400px;
+        align-items: center;
+        padding-left: 70px;
+        background-color: rgba(100, 100, 100, 0.8);
+    }
+
+    .navBar ul li {
+        display: block;
+        margin: 25px;
     }
 
     #hamberger {

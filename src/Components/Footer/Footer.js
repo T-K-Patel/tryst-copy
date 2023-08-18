@@ -1,5 +1,6 @@
 import './Footer.css';
 import logo from '../../assets/tryst-logo.png';
+import mailb from '../../assets/mailbox.svg';
 
 function Footer() {
     return (
@@ -28,12 +29,13 @@ function Footer() {
                 <div className='block'>
                     <div>
                         <h2>Follow Us!</h2>
-                        <img src={logo} alt='social' width='30px'></img>
-                        <img src={logo} alt='social' width='30px'></img>
-                        <img src={logo} alt='social' width='30px'></img>
-                        <img src={logo} alt='social' width='30px'></img><br></br>
+                        <i className="fa fa-instagram"></i>
+                        <i className="fa fa-facebook"></i>
+                        <i className="fa fa-linkedin"></i>
+                        <i className="fa fa-twitter"></i>
+                        <br></br>
                         <p>For any queries contact us at :</p>
-                        <p>admin@tryst-iitd.org</p>
+                        <p><i class="fa-regular fa-envelope"></i>admin@tryst-iitd.org</p>
 
                     </div>
                 </div>

@@ -6,14 +6,14 @@ import Merch from './Components/Merchandise/merch';
 
 function App() {
 	return (
-		<div>
+		<>
 			<Nav />
-			<div>
+			<div style={{marginTop: 100 + 'px'}}>
 				<Hero />
 				<Merch />
 			</div>
 			<Footer />
-		</div>
+		</>
 	);
 }
 

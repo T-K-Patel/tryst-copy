@@ -17,6 +17,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
+    overflow-x: hidden;
     justify-content: center;
 }
 
@@ -39,6 +40,10 @@ body{
 .block table td {
     padding: 15px;
 }
+.block i{
+    margin: 0 15px;
+}
+
 #Tryst-address{
     color: rgb(204, 204, 204);
     font-size: 1rem;

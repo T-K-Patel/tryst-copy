@@ -1,13 +1,36 @@
 import './Navbar.css';
 import Tryst from '../../assets/tryst-logo.png';
-import bars from '../../assets/menu-bars-svgrepo-com.svg';
+
+function hideMenu() {
+    document.getElementById("links").style = "left: -400px";
+    document.getElementById("menushow").style = "display: block";
+    document.getElementById("menuhide").style = "display: none";
+}
+function showMenu() {
+    document.getElementById("links").style = 'left: 0px';
+    document.getElementById("menushow").style = "display: none";
+    document.getElementById("menuhide").style = "display: block";
+}
+window.addEventListener('resize',()=>{
+    if(window.innerWidth >800){
+        document.getElementById("menushow").style = "display: none";
+        document.getElementById("menuhide").style = "display: none";
+        
+    }
+    else{
+        document.getElementById("menushow").style = "display: block";
+        document.getElementById("links").style = "left: -400px";
+    }
+})
+
 function NavBar() {
     return (
         <nav className='navBar'>
-            <img src={bars} width='28px' alt="=" id='hamberger'></img>
+            <i className="fa fa-bars" id='menushow' onClick={showMenu}></i>
+            <i className="fa fa-close" id='menuhide' onClick={hideMenu}></i>
             <h1><img src={Tryst} id='Tryst-logo' alt='Tryst'></img></h1>
             <text className='RightNav'>
-                <ul className='links'>
+                <ul className='links' id='links'>
                     <li>About</li>
                     <li>CAP</li>
                     <li>Accomodation</li>
