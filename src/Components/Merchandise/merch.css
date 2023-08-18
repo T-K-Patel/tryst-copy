@@ -1,0 +1,63 @@
+.merch {
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.merch h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+
+.merch_container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.merch_desc {
+    width: 40%;
+    font-size: 1.2rem;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.MerchBuy {
+    background: none;
+    color: aqua;
+    font-size: 1.8rem;
+    align-self: center;
+    padding: 20px 15px;
+    width: fit-content;
+    border: 3px solid aqua;
+    border: 2px solid #acebf6;
+    font-size: 30px;
+    padding: 8px 20px;
+}
+
+.merchImg {
+    padding: 15px 0;
+    height: min-content;
+}
+
+.merchImg img {
+    background: rgb(189, 189, 189);
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 300px;
+}
+
+@media screen and (max-width: 750px) {
+    .merch h1 {
+        font-size: 4rem;
+    }
+
+    .merch_container {
+        display: block;
+    }
+
+    .merch_desc {
+        width: auto;
+    }
+}

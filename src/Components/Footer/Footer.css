@@ -1,0 +1,60 @@
+body{
+    background: #041429;
+    text-align: center;
+    color: white;
+}
+.Footer{
+    padding-top: 30px;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(rgba(171,235,246,0),rgba(171,235,246,0.3));
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 15px;
+}
+.fooTer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.block {
+    display: flex;
+    width: 25%;
+    min-width: fit-content;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 3px;
+}
+
+.block table {
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.block table td {
+    padding: 15px;
+}
+#Tryst-address{
+    color: rgb(204, 204, 204);
+    font-size: 1rem;
+}
+@media screen and (max-width: 760px) {
+    .fooTer {
+        display: block;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .block {
+        margin: 20px;
+        width: auto;
+    }
+    #midFooter{
+        display: none;
+    }
+}

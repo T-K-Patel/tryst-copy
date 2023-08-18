@@ -1,0 +1,9 @@
+.hero{
+    background-image: url('../../assets/hero-bg.webp');
+    background-size: cover;
+    height: 85vh;
+    padding-top: 50px;
+}
+.hero img{
+    max-width: 80vw;
+}

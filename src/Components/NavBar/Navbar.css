@@ -1,0 +1,82 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 70px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+#Tryst-logo {
+    width: 85px;
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    display: inline-block;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 0 15px;
+    font-size: 1.4rem;
+}
+
+.links li::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: aqua;
+    display: block;
+    margin: auto;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.links li:hover {
+    color: aqua;
+}
+.links li:hover::after {
+    width: 100%;
+}
+
+.btn {
+    padding: 8px 15px;
+    margin: 0;
+    background-color: grey;
+    color: white;
+    font-weight: 800;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.RightNav {
+    display: inline-flex;
+    align-items: center;
+}
+
+#hamberger {
+    display: none;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .navBar {
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    .navBar ul {
+        display: none;
+    }
+
+    #hamberger {
+        display: block;
+    }
+}
