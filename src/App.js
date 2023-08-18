@@ -7,37 +7,37 @@ import Merch from './Components/Merchandise/merch';
 import {
 	BrowserRouter as Router,
 	Route,
-	Switch,
-	Link
+	Switch
 } from 'react-router-dom';
-import { useState } from 'react';
 
 function App() {
 	return (
 		<>
 			<Router>
 				<Nav />
-				<Switch>
-					<Route exact path='/About'>
-						<Merch />
-					</Route>
-					<Route exact path='/'>
-						<Hero />
-						<Merch />
-					</Route>
-					<Route exact path='/Merch/shop'>
-						<div style={{ height: 200 + 'px' }}>
-							<h1>You can buy anything from here</h1>
-							<h3>Go get some Money first!!</h3>
-						</div>
-					</Route>
-					<Route path='*'>
-						<div style={{ height: 200 + 'px' }}>
-							<h1>Error: 404</h1>
-							<h3>Page not found!!</h3>
-						</div>
-					</Route>
-				</Switch>
+				<div style={{ paddingTop: 100 + 'px' }}>
+					<Switch>
+						<Route exact path='/About'>
+							<Merch />
+						</Route>
+						<Route exact path='/'>
+							<Hero />
+							<Merch />
+						</Route>
+						<Route exact path='/Merch/shop'>
+							<div style={{ height: 200 + 'px' }}>
+								<h1>You can buy anything from here</h1>
+								<h3>Go get some Money first!!</h3>
+							</div>
+						</Route>
+						<Route path='*'>
+							<div style={{ height: 200 + 'px' }}>
+								<h1>Error: 404</h1>
+								<h3>Page not found!!</h3>
+							</div>
+						</Route>
+					</Switch>
+				</div>
 				<Footer />
 			</Router>
 		</>
