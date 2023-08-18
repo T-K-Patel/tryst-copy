@@ -3,6 +3,10 @@
     justify-content: space-around;
     align-items: center;
     padding: 0 70px;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
     height: 100px;
     box-sizing: border-box;
 }
@@ -17,7 +21,9 @@
     margin: 0;
     padding: 0;
 }
-
+#HomeLi{
+    display: none;
+}
 .links li {
     display: inline-block;
     list-style: none;
@@ -27,24 +33,32 @@
     font-size: 1.4rem;
     width: fit-content;
 }
-
-.links li::after {
-    content: '';
-    width: 0%;
-    height: 4px;
-    background: aqua;
-    display: block;
-    margin: auto;
-    border-radius: 2px;
-    transition: 0.5s;
+.links a{
+    color: white;
 }
 
-.links li:hover {
+.links li a::after {
+    content: '' !important;
+    width: 0;
+    height: 3px !important;
+    background: aqua !important;
+    display: block !important;
+    margin: auto !important;
+    border-radius: 2px !important;
+}
+
+.links li a:hover {
     color: aqua;
 }
 
-.links li:hover::after {
+.links li a:hover::after {
     width: 100%;
+}
+.active{
+    color: aqua !important;
+}
+.active::after{
+    width: 100% !important;
 }
 
 .btn {
@@ -94,6 +108,9 @@
         align-items: center;
         padding-left: 70px;
         background-color: rgba(100, 100, 100, 0.8);
+    }
+    #HomeLi{
+        display: block;
     }
 
     .navBar ul li {

@@ -1,6 +1,5 @@
 import './Footer.css';
 import logo from '../../assets/tryst-logo.png';
-import mailb from '../../assets/mailbox.svg';
 
 function Footer() {
     return (

@@ -1,5 +1,8 @@
 import './merch.css';
 import merchimg from '../../assets/Merch.webp';
+import { NavLink } from 'react-router-dom';
+
+
 function merch() {
     return (
         <div className="merch">
@@ -18,6 +21,8 @@ function merch() {
                     <br></br>
                     <center>
                         <p className='MerchBuy'>BUY NOW</p>
+                        <NavLink to='/Merch/shop'>BUY NOW</NavLink>
+                        <NavLink to='/About'>BUY NOW XX</NavLink>
                     </center>
                 </div>
             </div>
