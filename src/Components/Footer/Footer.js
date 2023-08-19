@@ -1,5 +1,6 @@
 import './Footer.css';
 import logo from '../../assets/tryst-logo.png';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -28,7 +29,7 @@ function Footer() {
                 <div className='block'>
                     <div>
                         <h2>Follow Us!</h2>
-                        <i className="fa fa-instagram"></i>
+                        <a href='https://www.instagram.com'><i className="fa fa-instagram"></i></a>
                         <i className="fa fa-facebook"></i>
                         <i className="fa fa-linkedin"></i>
                         <i className="fa fa-twitter"></i>
