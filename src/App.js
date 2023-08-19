@@ -3,6 +3,7 @@ import Nav from './Components/NavBar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Hero from './Components/hero/hero';
 import Merch from './Components/Merchandise/merch';
+import ResetP from './Components/resetpassword/resetpassword';
 
 import {
 	BrowserRouter as Router,
@@ -31,10 +32,7 @@ function App() {
 							</div>
 						</Route>
 						<Route path='*'>
-							<div style={{ height: 200 + 'px' }}>
-								<h1>Error: 404</h1>
-								<h3>Page not found!!</h3>
-							</div>
+							<ResetP/>
 						</Route>
 					</Switch>
 				</div>

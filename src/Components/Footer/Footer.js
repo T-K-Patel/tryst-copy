@@ -35,7 +35,7 @@ function Footer() {
                         <i className="fa fa-twitter"></i>
                         <br></br>
                         <p>For any queries contact us at :</p>
-                        <p><i class="fa-regular fa-envelope"></i>admin@tryst-iitd.org</p>
+                        <p><i className="fa-regular fa-envelope"></i>admin@tryst-iitd.org</p>
 
                     </div>
                 </div>
