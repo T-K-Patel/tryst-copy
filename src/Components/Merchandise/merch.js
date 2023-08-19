@@ -20,9 +20,7 @@ function merch() {
                     </p>
                     <br></br>
                     <center>
-                        <p className='MerchBuy'>BUY NOW</p>
-                        <NavLink to='/Merch/shop'>BUY NOW</NavLink>
-                        <NavLink to='/About'>BUY NOW XX</NavLink>
+                        <NavLink to='/merch/shop' style={{textDecoration:'none'}}><p className='MerchBuy'>BUY NOW</p></NavLink>
                     </center>
                 </div>
             </div>

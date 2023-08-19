@@ -29,7 +29,7 @@ function Footer() {
                 <div className='block'>
                     <div>
                         <h2>Follow Us!</h2>
-                        <a href='https://www.instagram.com'><i className="fa fa-instagram"></i></a>
+                        <a href='https://www.instagram.com' style={{textDecoration:'none',color:"white"}}><i className="fa fa-instagram"></i></a>
                         <i className="fa fa-facebook"></i>
                         <i className="fa fa-linkedin"></i>
                         <i className="fa fa-twitter"></i>
