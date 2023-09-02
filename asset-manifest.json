@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.16a14647.css",
+    "main.js": "/static/js/main.8abd2e74.js",
+    "static/js/787.de90afbc.chunk.js": "/static/js/787.de90afbc.chunk.js",
+    "static/media/PageBG.png": "/static/media/PageBG.bdc59e9d36168a551454.png",
+    "static/media/hero-bg.webp": "/static/media/hero-bg.aa32e93975bd693d4e24.webp",
+    "static/media/ResetPassword.png": "/static/media/ResetPassword.62afc13e7b71145a556a.png",
+    "static/media/tryst-logo.png": "/static/media/tryst-logo.2c01264983bd36cf8463.png",
+    "static/media/TrystLogo.svg": "/static/media/TrystLogo.a210478c0a7ab89b384f7759626d9d1e.svg",
+    "static/media/Merch.webp": "/static/media/Merch.de303305075501e2cba4.webp",
+    "index.html": "/index.html",
+    "main.16a14647.css.map": "/static/css/main.16a14647.css.map",
+    "main.8abd2e74.js.map": "/static/js/main.8abd2e74.js.map",
+    "787.de90afbc.chunk.js.map": "/static/js/787.de90afbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16a14647.css",
+    "static/js/main.8abd2e74.js"
+  ]
+}
